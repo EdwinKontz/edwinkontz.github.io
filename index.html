@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rio Ricky Febryan</title>
+  <style>
+    :root {
+      --cyan: #27F2FF;
+      --mint: #26FFC5;
+      --sky: #26ACFF;
+      --green: #26FF7B;
+      --royal: #2668FF;
+      --ink: #08233a;
+      /* dark text for the bright backgrounds */
+    }
+
+    @font-face {
+      font-family: "Graffiti Youth";
+      src: url("GraffitiYouth-Regular.otf") format("opentype");
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Aerosoldier";
+      src: url("AerosoldierBasic_PERSONAL_USE_ONLY.otf") format("opentype");
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Jacatra";
+      src: url("THE_JACATRA.otf") format("opentype");
+      font-display: swap;
+    }
+
+    body {
+      margin: 0;
+      background: var(--royal);
+    }
+
+    section {
+      padding: 20px 30px;
+      margin: 0;
+      color: var(--ink);
+    }
+
+    section>h1 {
+      text-align: center;
+    }
+
+    .intro {
+      background: var(--cyan);
+    }
+
+    .education {
+      background: var(--royal);
+      color: white;
+    }
+
+    .hobbies {
+      background: var(--green);
+    }
+
+    .achievements {
+      background: var(--sky);
+    }
+
+    .projects {
+      background: var(--mint);
+    }
+
+    .education table,
+    .education th,
+    .education td {
+      border-color: white;
+    }
+
+    .education th {
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    /* Circular profile picture */
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* Table */
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--ink);
+      padding: 6px 10px;
+    }
+
+    th {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    /* Links */
+    a {
+      color: var(--ink);
+      font-weight: bold;
+    }
+
+    .intro-content {
+      display: flex;
+      align-items: center;
+      /* centers the text vertically next to the image */
+      gap: 40px;
+    }
+
+    .profile-pic {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      /* keeps the image from getting squished */
+    }
+
+    .intro-text {
+      flex: 1;
+      /* text takes the remaining space */
+    }
+
+    .intro-text h2,
+    .intro-text h3 {
+      margin-top: 0;
+    }
+
+    body {
+      background: var(--cyan);
+    }
+
+    .intro-text h2 {
+      min-height: 1.4em;
+    }
+
+    .typing-garden {
+      display: inline-block;
+      width: min(190px, 34vw);
+      height: 110px;
+      vertical-align: middle;
+      margin: 2px 0 6px;
+      border: 0;
+      overflow: hidden;
+      background: var(--cyan);
+    }
+
+    .intro {
+      position: relative;
+      isolation: isolate;
+      min-height: 680px;
+      padding: 28px 4.5vw 36px;
+      overflow: hidden;
+      background: #10182f;
+      color: #fff;
+    }
+
+    .intro-header {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      padding-bottom: 14px;
+      margin-bottom: 36px;
+    }
+
+    .intro-header h1,
+    .intro-header p {
+      margin: 0;
+      color: #fff;
+    }
+
+    .intro-header h1 {
+      text-align: left;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(24px, 3vw, 48px);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .intro-header p {
+      padding-top: 8px;
+      color: rgba(255, 255, 255, 0.55);
+      font-size: clamp(10px, 1vw, 14px);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .intro-content {
+      position: relative;
+      min-height: 520px;
+      display: block;
+    }
+
+    .profile-pic {
+      position: absolute;
+      z-index: 2;
+      right: 2%;
+      top: 90px;
+      width: clamp(130px, 15vw, 230px);
+      height: clamp(180px, 19vw, 270px);
+      border-radius: 0;
+      border: 8px solid #10182f;
+      object-fit: cover;
+      filter: grayscale(100%) contrast(1.12);
+    }
+
+    .intro-text {
+      position: relative;
+      height: 100%;
+    }
+
+    .intro-name {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: min(68vw, 980px);
+      height: clamp(170px, 18vw, 280px);
+      margin: 170px 0 0;
+      object-fit: cover;
+      object-position: center;
+      mix-blend-mode: lighten;
+    }
+
+    .intro-name .first-name {
+      color: #fff;
+    }
+
+    .intro-name .last-name {
+      color: #ff3b25;
+    }
+
+    .intro-tagline {
+      position: absolute;
+      right: 2%;
+      top: 25px;
+      margin: 0;
+      color: #fff;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(18px, 2vw, 32px);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transform: rotate(-2deg);
+    }
+
+
+    .intro-bottom {
+      position: absolute;
+      z-index: 3;
+      right: 4.5vw;
+      bottom: 26px;
+      left: 4.5vw;
+      display: grid;
+      grid-template-columns: auto minmax(40px, 1fr) auto;
+      align-items: center;
+      gap: clamp(14px, 2.2vw, 36px);
+    }
+
+    .digging-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #e6e1d8;
+      text-decoration: none;
+    }
+
+    .digging-arrow {
+      font-family: Georgia, serif;
+      font-size: clamp(24px, 3vw, 42px);
+      line-height: 1;
+      transform: rotate(-12deg);
+    }
+
+    .digging-label {
+      font-family: "Comic Sans MS", "Bradley Hand", cursive;
+      font-size: clamp(17px, 2.4vw, 34px);
+      font-weight: 700;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .brush-line {
+      height: clamp(8px, 1.1vw, 15px);
+      background: #e6e1d8;
+      clip-path: polygon(0 42%, 7% 24%, 23% 30%, 39% 8%, 56% 24%, 75% 12%, 91% 30%, 100% 20%, 98% 75%, 82% 85%, 63% 70%, 42% 100%, 22% 78%, 5% 90%);
+      transform: rotate(-1deg);
+    }
+
+    .intro-links {
+      display: flex;
+      gap: clamp(10px, 1.4vw, 22px);
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(10px, 1vw, 14px);
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+
+    .intro-links a {
+      color: #e6e1d8;
+      text-decoration: none;
+    }
+
+    .intro-links a::after {
+      content: " ↗";
+      font-family: Arial, sans-serif;
+    }
+
+    @media (max-width: 900px) {
+      .intro-content {
+        align-items: flex-start;
+      }
+
+      .typing-garden {
+        width: min(180px, 34vw);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .intro {
+        min-height: 560px;
+      }
+
+      .intro-header {
+        margin-bottom: 20px;
+      }
+
+      .intro-header p {
+        display: none;
+      }
+
+      .intro-content {
+        min-height: 440px;
+      }
+
+      .intro-name {
+        margin-top: 190px;
+        width: 82vw;
+        height: 150px;
+      }
+
+      .profile-pic {
+        right: 0;
+        top: 72px;
+        width: 140px;
+        height: 180px;
+      }
+
+
+      .intro-tagline {
+        right: 6%;
+        top: 28px;
+      }
+
+      .intro-bottom {
+        right: 20px;
+        bottom: 18px;
+        left: 20px;
+        grid-template-columns: auto 1fr;
+        gap: 12px;
+      }
+
+      .brush-line {
+        display: none;
+      }
+
+      .intro-links {
+        grid-column: 1 / -1;
+        justify-content: flex-end;
+      }
+    }
+
+    /* Video background */
+    .intro-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -3;
+      pointer-events: none;
+    }
+
+    .intro::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(16, 24, 47, 0.45);
+      z-index: -2;
+    }
+
+    /* ASCEND word */
+
+    /* Passive shaking */
+    @keyframes shake-link {
+      0% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      20% {
+        transform: translate(1px, -1px) rotate(0.4deg);
+      }
+
+      40% {
+        transform: translate(-1px, 1px) rotate(-0.4deg);
+      }
+
+      60% {
+        transform: translate(1px, 1px) rotate(0.3deg);
+      }
+
+      80% {
+        transform: translate(-1px, -1px) rotate(-0.3deg);
+      }
+
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+    }
+
+    /* keeps the original rotate(-2deg) as its base tilt */
+    @keyframes shake-tagline {
+      0% {
+        transform: translate(0, 0) rotate(-2deg);
+      }
+
+      20% {
+        transform: translate(1px, -2px) rotate(-2.6deg);
+      }
+
+      40% {
+        transform: translate(-2px, 1px) rotate(-1.5deg);
+      }
+
+      60% {
+        transform: translate(2px, 1px) rotate(-2.4deg);
+      }
+
+      80% {
+        transform: translate(-1px, -1px) rotate(-1.7deg);
+      }
+
+      100% {
+        transform: translate(0, 0) rotate(-2deg);
+      }
+    }
+
+    /* keeps the original rotate(-1deg) as its base tilt */
+    @keyframes shake-brush {
+      0% {
+        transform: translate(0, 0) rotate(-1deg);
+      }
+
+      25% {
+        transform: translate(2px, -1px) rotate(-1.3deg);
+      }
+
+      50% {
+        transform: translate(-2px, 1px) rotate(-0.7deg);
+      }
+
+      75% {
+        transform: translate(1px, 1px) rotate(-1.2deg);
+      }
+
+      100% {
+        transform: translate(0, 0) rotate(-1deg);
+      }
+    }
+
+    .digging-link {
+      animation: shake-link 0.5s steps(1) infinite;
+    }
+
+    .intro-tagline {
+      animation: shake-tagline 0.4s steps(1) infinite;
+    }
+
+    .brush-line {
+      animation: shake-brush 0.6s steps(1) infinite;
+    }
+
+    /* Respect people who turn off motion in their system settings */
+      {
+
+      .digging-link,
+      .intro-tagline,
+      .brush-line {
+        animation: none;
+      }
+    }
+
+    /* Skills section: red / black / dark blue */
+    .skills {
+      position: relative;
+      padding: clamp(50px, 8vw, 110px) 6vw 70px;
+      background:
+        radial-gradient(ellipse at 15% 0%, #0b1a4a 0%, rgba(11, 26, 74, 0) 60%),
+        linear-gradient(180deg, #050814 0%, #000000 100%);
+      color: #2447b8;
+      overflow: hidden;
+    }
+
+    .skills-title {
+      margin: 0;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-weight: 400;
+      line-height: 0.95;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    .skills-line1,
+    .skills-line2 {
+      display: block;
+    }
+
+    .skills-line1 {
+      font-size: clamp(48px, 10vw, 150px);
+      color: #1f3fa6;
+      /* dark blue */
+    }
+
+    .skills-line2 {
+      margin-left: 4vw;
+      font-size: clamp(56px, 12vw, 180px);
+      color: #e32a17;
+      /* red */
+      -webkit-text-stroke: 3px #e32a17;
+      paint-order: stroke fill;
+    }
+
+    .skills-brush {
+      display: block;
+      width: min(80%, 1100px);
+      height: clamp(10px, 1.2vw, 18px);
+      margin: 14px 0 0 4vw;
+      background: #e32a17;
+      /* red underline */
+      clip-path: polygon(0 42%, 7% 24%, 23% 30%, 39% 8%, 56% 24%, 75% 12%, 91% 30%, 100% 20%, 98% 75%, 82% 85%, 63% 70%, 42% 100%, 22% 78%, 5% 90%);
+      transform: rotate(-0.6deg);
+    }
+
+    .skills-sub {
+      margin: clamp(30px, 5vw, 60px) 0 0;
+      color: #5a78d6;
+      /* lighter blue so it reads on black */
+      font-size: clamp(12px, 1.4vw, 18px);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .skills-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(30px, 6vw, 90px);
+      margin: clamp(30px, 5vw, 60px) 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .skills-stats li {
+      display: flex;
+      align-items: flex-end;
+      gap: 14px;
+    }
+
+    .stat-num {
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(60px, 8vw, 120px);
+      line-height: 0.9;
+      color: #e32a17;
+    }
+
+    .stat-label {
+      padding-bottom: 8px;
+      font-size: clamp(12px, 1.2vw, 16px);
+      letter-spacing: 2px;
+      line-height: 1.5;
+      text-transform: uppercase;
+      color: #5a78d6;
+    }
+
+    /* Two columns: text on the left, animation on the right */
+    /* Skills: text left, animation right */
+    .skills {
+      display: grid;
+      /* this was missing */
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      align-items: center;
+      gap: clamp(20px, 4vw, 60px);
+    }
+
+    .skills-anim {
+      width: 100%;
+      height: 85vh;
+      object-fit: cover;
+      /* crops the empty space around the character */
+      object-position: center;
+      transform: scale(1.3);
+      /* zoom: raise or lower to taste */
+      transform-origin: center;
+      pointer-events: none;
+    }
+
+    @media (max-width: 900px) {
+      .skills {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-anim {
+        height: 60vh;
+      }
+    }
+
+    /* Stack on tablets and phones */
+    @media (max-width: 900px) {
+      .skills {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Rough, worn text and brush stroke */
+    .skills-line1,
+    .skills-line2,
+    .skills-brush,
+    .stat-num {
+      filter: url(#worn);
+    }
+
+    /* Film grain (animated) */
+    .skills::after {
+      content: "";
+      position: absolute;
+      inset: -50%;
+      width: 200%;
+      height: 200%;
+      z-index: 5;
+      pointer-events: none;
+      opacity: 0.14;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+      animation: grain 0.9s steps(1) infinite;
+    }
+
+    @keyframes grain {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      20% {
+        transform: translate(-6%, 4%);
+      }
+
+      40% {
+        transform: translate(5%, -7%);
+      }
+
+      60% {
+        transform: translate(-4%, -3%);
+      }
+
+      80% {
+        transform: translate(7%, 5%);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+
+    /* Vignette and dust specks */
+    .skills::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, .35) 0 1px, transparent 2px),
+        radial-gradient(circle at 34% 72%, rgba(255, 255, 255, .25) 0 1.5px, transparent 2.5px),
+        radial-gradient(circle at 58% 30%, rgba(255, 255, 255, .3) 0 1px, transparent 2px),
+        radial-gradient(circle at 81% 64%, rgba(255, 255, 255, .25) 0 2px, transparent 3px),
+        radial-gradient(circle at 92% 12%, rgba(255, 255, 255, .3) 0 1px, transparent 2px),
+        radial-gradient(ellipse at center, transparent 45%, rgba(0, 0, 0, .65) 100%);
+    }
+
+
+    /* Works section */
+    .works {
+      position: relative;
+      padding: clamp(50px, 7vw, 100px) 6vw 60px;
+      background:
+        radial-gradient(ellipse at 85% 10%, #0b1a4a 0%, rgba(11, 26, 74, 0) 55%),
+        linear-gradient(180deg, #000000 0%, #050814 100%);
+      color: #5a78d6;
+      overflow: hidden;
+    }
+
+    .works-title {
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 clamp(14px, 2.4vw, 36px);
+      justify-content: center;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-weight: 400;
+      font-size: clamp(40px, 8vw, 120px);
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .works-a {
+      color: #1f3fa6;
+    }
+
+    .works-b {
+      color: #e32a17;
+      -webkit-text-stroke: 2px #e32a17;
+      paint-order: stroke fill;
+    }
+
+    .works-brush {
+      display: block;
+      width: min(55%, 640px);
+      height: clamp(8px, 1vw, 14px);
+      margin: 10px 0 0 auto;
+      margin-right: 8vw;
+      background: #e32a17;
+      clip-path: polygon(0 42%, 7% 24%, 23% 30%, 39% 8%, 56% 24%, 75% 12%, 91% 30%, 100% 20%, 98% 75%, 82% 85%, 63% 70%, 42% 100%, 22% 78%, 5% 90%);
+      transform: rotate(-0.6deg);
+    }
+
+    /* Curved row of cards */
+    .works-track {
+      display: flex;
+      justify-content: center;
+      gap: clamp(14px, 2.4vw, 36px);
+      margin-top: clamp(40px, 6vw, 80px);
+      perspective: 1200px;
+    }
+
+    .work-card {
+      position: relative;
+      flex: 1 1 0;
+      max-width: 300px;
+      aspect-ratio: 4 / 3;
+      background: #0a0f24;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+      transform: rotateY(var(--ry)) translateY(var(--lift));
+      transition: transform 0.35s ease;
+    }
+
+    .work-card:hover {
+      transform: rotateY(0deg) translateY(-10px) scale(1.04);
+      z-index: 3;
+    }
+
+    .work-card img,
+    .work-media {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .work-media {
+      display: flex;
+      align-items: flex-end;
+      padding: 14px;
+      box-sizing: border-box;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(16px, 1.8vw, 26px);
+      line-height: 1.05;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    /* placeholder backgrounds until you add real images */
+    .m1 {
+      background: linear-gradient(135deg, #3a0a08, #e32a17);
+    }
+
+    .m2 {
+      background: linear-gradient(135deg, #050814, #1f3fa6);
+    }
+
+    .m3 {
+      background: linear-gradient(135deg, #1a1a1a, #e32a17);
+    }
+
+    .m4 {
+      background: linear-gradient(135deg, #0b1a4a, #000);
+    }
+
+    .work-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 2;
+      padding: 3px 10px 3px 8px;
+      background: rgba(0, 0, 0, 0.7);
+      color: #d4cfc4;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    .work-tag::before {
+      content: "● ";
+      color: #e32a17;
+    }
+
+    /* Bottom row */
+    .works-bottom {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-top: clamp(40px, 6vw, 80px);
+    }
+
+    .works-note {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #d4cfc4;
+      transform: rotate(-6deg);
+    }
+
+    .note-text {
+      font-family: "Graffiti Youth", Impact, sans-serif;
+      font-size: clamp(28px, 4vw, 56px);
+    }
+
+    .note-arrow {
+      font-size: clamp(30px, 4vw, 60px);
+      line-height: 1;
+    }
+
+    .works-end {
+      text-align: right;
+    }
+
+    .works-big {
+      margin: 0;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(26px, 4.4vw, 64px);
+      line-height: 1;
+      text-transform: uppercase;
+      color: #1f3fa6;
+    }
+
+    .works-big em {
+      font-style: normal;
+      color: #e32a17;
+    }
+
+    .works-brush2 {
+      display: block;
+      width: 100%;
+      height: 8px;
+      margin-top: 8px;
+      background: #e32a17;
+      clip-path: polygon(0 42%, 12% 24%, 30% 30%, 50% 10%, 70% 26%, 90% 14%, 100% 30%, 98% 80%, 70% 90%, 40% 75%, 10% 95%);
+    }
+
+    .works-small {
+      margin: 18px 0 0;
+      font-size: clamp(11px, 1.2vw, 16px);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #5a78d6;
+    }
+
+    /* Dirty look, reusing the filter from the skills section */
+    .works-a,
+    .works-b,
+    .works-big,
+    .works-brush,
+    .works-brush2 {
+      filter: url(#worn);
+    }
+
+    /* Phones: horizontal scroll, no tilt */
+    @media (max-width: 700px) {
+      .works-track {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 14px;
+      }
+
+      .work-card {
+        flex: 0 0 72%;
+        transform: none;
+      }
+
+      .works-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    /* Project pop-up */
+    .work-card.is-clickable {
+      cursor: pointer;
+    }
+
+    .work-card.is-clickable:focus-visible {
+      outline: 2px solid #e32a17;
+      outline-offset: 4px;
+    }
+
+    .work-modal {
+      width: min(1100px, 92vw);
+      max-height: 90vh;
+      padding: 0;
+      border: 1px solid rgba(227, 42, 23, 0.5);
+      background: linear-gradient(180deg, #050814, #000);
+      color: #d4cfc4;
+      overflow: auto;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
+    }
+
+    .work-modal::backdrop {
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(3px);
+    }
+
+    .modal-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+      gap: clamp(18px, 3vw, 36px);
+      padding: clamp(18px, 3vw, 36px);
+      align-items: start;
+    }
+
+    .modal-video {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      object-fit: contain;
+    }
+
+    .modal-tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: #d4cfc4;
+    }
+
+    .modal-tag::before {
+      content: "● ";
+      color: #e32a17;
+    }
+
+    .modal-info h3 {
+      margin: 0 0 14px;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-weight: 400;
+      font-size: clamp(24px, 3vw, 40px);
+      line-height: 1.05;
+      text-transform: uppercase;
+      color: #e32a17;
+    }
+
+    .modal-info p {
+      margin: 0 0 16px;
+      line-height: 1.6;
+      color: #9db0ee;
+    }
+
+    .modal-meta {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 14px;
+      line-height: 1.8;
+      color: #5a78d6;
+    }
+
+    .modal-meta b {
+      color: #d4cfc4;
+      letter-spacing: 1px;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      z-index: 2;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .modal-close:hover {
+      background: #e32a17;
+    }
+
+    @media (max-width: 800px) {
+      .modal-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Speed lines: black, white and red, drifting right to left */
+    .speed-lines {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    /* keep the real content above the lines */
+    .works> :not(.speed-lines) {
+      position: relative;
+      z-index: 1;
+    }
+
+    .sl {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: calc(100% + 3600px);
+      /* extra width so the loop is seamless */
+      background-repeat: repeat-x;
+      will-change: transform;
+      animation: sl-drift linear infinite;
+    }
+
+    /* every tile width below divides 3600, so the loop has no jump */
+    .sl-far {
+      opacity: 0.7;
+      animation-duration: 5s;
+      background-image:
+        linear-gradient(90deg, transparent 0 20%, rgba(255, 255, 255, .10) 60%, transparent 100%),
+        linear-gradient(90deg, transparent 0 30%, rgba(227, 42, 23, .16) 70%, transparent 100%),
+        linear-gradient(90deg, transparent 0 10%, rgba(0, 0, 0, .55) 60%, transparent 100%),
+        linear-gradient(90deg, transparent 0 25%, rgba(255, 255, 255, .08) 65%, transparent 100%),
+        linear-gradient(90deg, transparent 0 15%, rgba(0, 0, 0, .5) 55%, transparent 100%);
+      background-size: 1200px 1px, 1800px 1px, 900px 1px, 1200px 1px, 1800px 1px;
+      background-position: 0 14%, 300px 31%, 100px 52%, 600px 68%, 900px 86%;
+    }
+
+    .sl-near {
+      animation-duration: 5s;
+      background-image:
+        linear-gradient(90deg, transparent 0 40%, rgba(227, 42, 23, .28) 80%, transparent 100%),
+        linear-gradient(90deg, transparent 0 30%, rgba(255, 255, 255, .16) 75%, transparent 100%),
+        linear-gradient(90deg, transparent 0 20%, rgba(0, 0, 0, .6) 70%, transparent 100%),
+        linear-gradient(90deg, transparent 0 35%, rgba(255, 255, 255, .12) 75%, transparent 100%);
+      background-size: 1800px 2px, 1200px 1px, 1200px 2px, 1800px 1px;
+      background-position: 400px 22%, 200px 42%, 700px 60%, 1000px 78%;
+    }
+
+    @keyframes sl-drift {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-3600px);
+      }
+
+      /* moves right to left */
+    }
+
+
+    /* Rising air bubbles */
+    .bubbles {
+      position: absolute;
+      /* out of the grid, so it doesn't take a column */
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    /* keep the real content above the bubbles */
+    .skills> :not(.bubbles) {
+      position: relative;
+      z-index: 1;
+    }
+
+    .bubble {
+      position: absolute;
+      bottom: -80px;
+      left: var(--x);
+      width: var(--s);
+      height: var(--s);
+      border-radius: 50%;
+      border: 1px solid rgba(160, 185, 255, 0.35);
+      background:
+        radial-gradient(circle at 30% 28%,
+          rgba(255, 255, 255, 0.55) 0 7%,
+          rgba(255, 255, 255, 0.08) 22%,
+          rgba(90, 120, 214, 0.10) 60%,
+          rgba(90, 120, 214, 0.25) 100%);
+      opacity: 0;
+      will-change: transform, opacity;
+      animation: bubble-rise var(--d) linear var(--delay) infinite;
+    }
+
+    /* a few red-tinted ones to match the palette */
+    .bubble.red {
+      border-color: rgba(227, 42, 23, 0.4);
+      background:
+        radial-gradient(circle at 30% 28%,
+          rgba(255, 255, 255, 0.45) 0 7%,
+          rgba(255, 255, 255, 0.05) 22%,
+          rgba(227, 42, 23, 0.08) 60%,
+          rgba(227, 42, 23, 0.22) 100%);
+    }
+
+    @keyframes bubble-rise {
+      0% {
+        transform: translate(0, 0) scale(0.7);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: var(--o);
+      }
+
+      35% {
+        transform: translate(var(--drift), -40vh) scale(0.9);
+      }
+
+      65% {
+        transform: translate(calc(var(--drift) * -0.6), -80vh) scale(1);
+      }
+
+      90% {
+        opacity: var(--o);
+      }
+
+      100% {
+        transform: translate(calc(var(--drift) * 0.5), -125vh) scale(1.05);
+        opacity: 0;
+      }
+    }
+
+
+    .bubble {
+      border: 1.5px solid rgba(190, 210, 255, 0.7);
+      box-shadow: 0 0 8px rgba(90, 120, 214, 0.35);
+    }
+
+    .bubble.red {
+      border-color: rgba(255, 90, 70, 0.75);
+      box-shadow: 0 0 8px rgba(227, 42, 23, 0.35);
+    }
+
+    .bubbles {
+      z-index: 2;
+    }
+
+    /* also pass in front of the character */
+    /* Text over the video thumbnails */
+    .work-caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      padding: 36px 14px 14px;
+      /* extra top space for the fade */
+      box-sizing: border-box;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(16px, 1.8vw, 26px);
+      line-height: 1.05;
+      text-transform: uppercase;
+      color: #fff;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+      pointer-events: none;
+      /* clicks still reach the card */
+    }
+
+    /* Gallery inside the pop-up */
+    .modal-gallery {
+      padding: 0 clamp(18px, 3vw, 36px) clamp(18px, 3vw, 36px);
+    }
+
+    .modal-gallery h4 {
+      margin: 0 0 12px;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #d4cfc4;
+    }
+
+    .modal-gallery h4::before {
+      content: "● ";
+      color: #e32a17;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+    }
+
+    .gallery-grid a {
+      display: block;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: #000;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .gallery-grid a:hover,
+    .gallery-grid a:focus-visible {
+      border-color: #e32a17;
+      transform: translateY(-3px);
+    }
+
+    .gallery-grid img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      object-position: top left;
+      /* shows the start of each code screenshot */
+    }
+
+    /* Image viewer */
+    .gallery-grid a {
+      cursor: zoom-in;
+    }
+
+    .lightbox {
+      width: min(1200px, 96vw);
+      max-height: 94vh;
+      padding: 14px;
+      box-sizing: border-box;
+      border: 1px solid rgba(227, 42, 23, 0.5);
+      background: #000;
+      color: #d4cfc4;
+      overflow: auto;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
+    }
+
+    .lightbox::backdrop {
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(3px);
+    }
+
+    .lightbox img {
+      display: block;
+      width: 100%;
+      max-height: 78vh;
+      object-fit: contain;
+      background: #0a0a0a;
+    }
+
+    .lightbox p {
+      margin: 10px 0 0;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #5a78d6;
+    }
+
+    .lb-btn {
+      position: absolute;
+      z-index: 2;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .lb-btn:hover {
+      background: #e32a17;
+    }
+
+    .lb-close {
+      top: 10px;
+      right: 10px;
+      width: 36px;
+      height: 36px;
+      font-size: 16px;
+    }
+
+    .lb-prev,
+    .lb-next {
+      top: 45%;
+      width: 44px;
+      height: 60px;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .lb-prev {
+      left: 10px;
+    }
+
+    .lb-next {
+      right: 10px;
+    }
+    /* Contact section */
+.contact {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+  color: #d4cfc4;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+}
+.contact.dragging { cursor: grabbing; }
+
+/* Keep extra media beyond the viewport so the wall stays covered while dragged. */
+.contact-wall {
+  position: absolute;
+  inset: -20%;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
+  gap: 10px;
+  filter: brightness(0.33) saturate(0.8);
+  transform: translate(var(--dx, 0px), var(--dy, 0px));
+  will-change: transform;
+}
+.contact-wall .tile {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: #0a0f24;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.contact-wall .tile img,
+.contact-wall .tile video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* dark vignette so the text stays readable */
+.contact-shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at center, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.contact-center {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 6vw;
+  pointer-events: none;           /* dragging works through the text */
+}
+
+.contact-title {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 clamp(12px, 2vw, 28px);
+  font-family: Impact, "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: clamp(40px, 7.5vw, 110px);
+  line-height: 1;
+  text-transform: uppercase;
+}
+.ct-a { color: #e32a17; }
+.ct-b { color: #3f66dc; }
+
+.contact-brush {
+  display: block;
+  width: min(45%, 420px);
+  height: clamp(7px, 0.9vw, 12px);
+  margin: 10px 0 0;
+  align-self: flex-start;
+  margin-left: calc(50% - min(38vw, 390px));
+  background: #d4cfc4;
+  clip-path: polygon(0 42%, 7% 24%, 23% 30%, 39% 8%, 56% 24%, 75% 12%, 91% 30%, 100% 20%, 98% 75%, 82% 85%, 63% 70%, 42% 100%, 22% 78%, 5% 90%);
+  transform: rotate(-1deg);
+}
+
+.contact-mail {
+  pointer-events: auto;
+  margin-top: clamp(30px, 5vw, 60px);
+  padding: 22px 40px;
+  border: 1px solid rgba(212, 207, 196, 0.45);
+  background: rgba(0, 0, 0, 0.45);
+  color: #d4cfc4;
+  font-size: clamp(18px, 2.2vw, 30px);
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+.contact-mail:hover { border-color: #e32a17; background: rgba(227, 42, 23, 0.18); }
+
+.contact-note {
+  margin: 28px 0 0;
+  font-size: clamp(12px, 1.3vw, 17px);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(212, 207, 196, 0.75);
+}
+
+/* corner labels */
+.drag-hint,
+.to-top {
+  position: absolute;
+  bottom: 28px;
+  z-index: 3;
+  font-family: "Graffiti Youth", Impact, sans-serif;
+  font-size: clamp(26px, 3.4vw, 52px);
+  color: #d4cfc4;
+}
+.drag-hint { left: 4vw; pointer-events: none; }
+
+.to-top {
+  right: 4vw;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+}
+.to-top:hover { color: #e32a17; transform: translateY(-4px); }
+
+/* dirty look, reusing the worn filter from the Skills section */
+.ct-a,
+.ct-b,
+.contact-brush {
+  filter: url(#worn);
+}
+
+@media (max-width: 700px) {
+  .contact-wall { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .contact-brush { display: none; }
+  .contact-mail { padding: 16px 20px; word-break: break-all; }
+}
+/* click-to-copy feedback */
+.contact-mail {
+  position: relative;
+  overflow: hidden;
+}
+
+.mail-copied {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e32a17;
+  color: #d4cfc4;
+  font-family: "Graffiti Youth", Impact, sans-serif;
+  font-size: clamp(28px, 3.2vw, 46px);
+  letter-spacing: 2px;
+  opacity: 0;
+  transform: scale(0.96);
+  transition: opacity 0.15s, transform 0.15s;
+  pointer-events: none;
+}
+
+.contact-mail.copied .mail-copied {
+  opacity: 1;
+  transform: scale(1);
+}
+  </style>
+</head>
+
+<body>
+  <section class="intro">
+    <video class="intro-bg" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+      <source src="Background_introduction.mp4" type="video/mp4">
+    </video>
+
+    <svg class="intro-ascend" aria-hidden="true" preserveAspectRatio="none"
+      style="position:absolute; inset:0; width:100%; height:100%; z-index:-1; pointer-events:none; display:block">
+      <text id="ascend-text" x="0" y="0" font-size="200" fill="rgba(230,225,216,0.22)">ASCEND</text>
+    </svg>
+
+    <header class="intro-header">
+      <h1>Code / Motion / Chaos</h1>
+      <p>Index - Portfolio / 2026</p>
+    </header>
+    <div class="intro-content">
+      <img src="profile.jpeg" class="profile-pic" alt="Profile picture">
+      <div class="intro-text">
+        <p class="intro-tagline">Above The Eyes</p>
+        <video class="intro-name" autoplay muted loop playsinline aria-label="Rio Ricky Febryan animated name">
+          <source src="garden-rio-ricky-f--breathe.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <footer class="intro-bottom">
+      <a class="digging-link" href="#education">
+        <span class="digging-arrow" aria-hidden="true">↙</span>
+        <span class="digging-label">Keep Digging</span>
+      </a>
+      <span class="brush-line" aria-hidden="true"></span>
+      <nav class="intro-links" aria-label="Social links">
+        <a href="https://www.instagram.com/edwinkontz/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@edwinkontzz?lang=en" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </nav>
+    </footer>
+  </section>
+  <section class="skills" id="skills">
+    <div class="bubbles" id="bubbles" aria-hidden="true"></div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <filter id="worn" x="-5%" y="-5%" width="110%" height="110%">
+        <!-- wobble the edges -->
+        <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="warp" />
+        <feDisplacementMap in="SourceGraphic" in2="warp" scale="5" result="rough" />
+        <!-- punch tiny holes, like worn-off ink -->
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="grain" />
+        <feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -9 5.2" result="holes" />
+        <feComposite in="rough" in2="holes" operator="in" />
+      </filter>
+    </svg>
+    <div class="skills-text">
+      <h2 class="skills-title">
+        <span class="skills-line1">BREAK THE</span>
+        <span class="skills-line2">INTERNET</span>
+      </h2>
+      <span class="skills-brush" aria-hidden="true"></span>
+
+      <p class="skills-sub">Skills I use to build, edit and break things.</p>
+
+      <ul class="skills-stats">
+        <li>
+          <span class="stat-num">01</span>
+          <span class="stat-label">HTML<br>CSS</span>
+        </li>
+        <li>
+          <span class="stat-num">02</span>
+          <span class="stat-label">Video<br>Editing</span>
+        </li>
+        <li>
+          <span class="stat-num">03</span>
+          <span class="stat-label">Game<br>Development</span>
+        </li>
+      </ul>
+    </div>
+
+    <video class="skills-anim" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+      <source src="website-animation0001-0250.webm" type="video/webm">
+    </video>
+  </section>
+
+
+  <section class="works" id="works">
+    <div class="speed-lines" aria-hidden="true">
+      <div class="sl sl-far"></div>
+      <div class="sl sl-near"></div>
+    </div>
+    <h2 class="works-title">
+      <span class="works-a">MADE SOME.</span>
+      <span class="works-b">BROKE SOME...</span>
+    </h2>
+    <span class="works-brush" aria-hidden="true"></span>
+
+    <div class="works-track">
+      <article class="work-card is-clickable" style="--ry: 24deg; --lift: 18px" data-modal="fnaf-modal" tabindex="0"
+        role="button" aria-haspopup="dialog" aria-label="Open FNAF 1 pizzeria recreation">
+        <span class="work-tag">FNAF / 01</span>
+        <video class="work-media" muted playsinline preload="metadata">
+          <source src="FNAF.mp4#t=1" type="video/mp4">
+        </video>
+        <span class="work-caption">1:1 Pizzeria Recreation</span>
+      </article>
+
+
+      <article class="work-card is-clickable" style="--ry: 8deg; --lift: 6px" data-modal="gpo-modal" tabindex="0"
+        role="button" aria-haspopup="dialog" aria-label="Open Grand Piece Online macro program">
+        <span class="work-tag">GPO / 02</span>
+        <video class="work-media" muted playsinline preload="metadata">
+          <source src="5EeG-flqk0noKKBn0Da9KQ.mp4#t=1" type="video/mp4">
+        </video>
+        <span class="work-caption">Macro Program</span>
+      </article>
+
+      <article class="work-card is-clickable" style="--ry: -8deg; --lift: 6px" data-modal="yt-modal" tabindex="0"
+        role="button" aria-haspopup="dialog" aria-label="Open YouTube channel">
+        <span class="work-tag">YOUTUBE / 03</span>
+        <video class="work-media" muted playsinline preload="metadata">
+          <source src="youtube.mp4" type="video/mp4">
+        </video>
+        <span class="work-caption">YouTube Channel</span>
+      </article>
+
+      <article class="work-card is-clickable" style="--ry: -24deg; --lift: 18px" data-modal="backrooms-modal"
+        tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open Backrooms movie video project">
+        <span class="work-tag">BACKROOMS / 04</span>
+        <video class="work-media" muted playsinline preload="metadata">
+          <source src="backrooms_card.mp4" type="video/mp4">
+        </video>
+        <span class="work-caption">Movie Video Project</span>
+      </article>
+    </div>
+
+    <div class="works-bottom">
+      <div class="works-note" aria-hidden="true">
+        <span class="note-text">my work!</span>
+        <span class="note-arrow">↗</span>
+      </div>
+      <div class="works-end">
+        <p class="works-big">AND SOMEHOW, <em>4 PROJECTS</em></p>
+        <span class="works-brush2" aria-hidden="true"></span>
+        <p class="works-small">Designed. Coded. Edited. By me.</p>
+      </div>
+    </div>
+    </section>
+  <section class="contact" id="contact">
+    <div class="contact-wall" id="contact-wall" aria-hidden="true"></div>
+    <div class="contact-shade" aria-hidden="true"></div>
+
+    <div class="contact-center">
+        <h2 class="contact-title">
+            <span class="ct-a">ANNOY ME</span>
+            <span class="ct-b">WITH YOUR IDEAS</span>
+        </h2>
+        <span class="contact-brush" aria-hidden="true"></span>
+
+        <a class="contact-mail" id="contact-mail" href="mailto:your-email@example.com" data-email="edwinkontz@gmail.com">
+    <span class="mail-text">edwinkontz@gmail.com</span>
+    <span class="mail-copied">COPIED</span>
+</a>
+
+    <div class="drag-hint" aria-hidden="true">DRAG ME ↗</div>
+    <button class="to-top" id="to-top" type="button">SCROLL TO TOP</button>
+</section>
+  <dialog class="work-modal" id="fnaf-modal" aria-labelledby="fnaf-title">
+    <button class="modal-close" type="button" aria-label="Close">✕</button>
+
+    <div class="modal-grid">
+      <video class="modal-video" controls playsinline preload="metadata">
+        <source src="FNAF.mp4" type="video/mp4">
+      </video>
+
+      <div class="modal-info">
+        <span class="modal-tag">FNAF / 01</span>
+        <h3 id="fnaf-title">1:1 Recreation of Five Nights at Freddy's 1 Pizzeria</h3>
+        <p>I just did this because I was bored in summer break. Honestly had alot of fun building it! Learned a lot
+          about
+          3D modeling, lighting, rigging, animation, rendering. Spent about 3 months on this project, and i'm proud of
+          the result.
+        </p>
+        <ul class="modal-meta">
+          <li><b>Tools:</b> Blender, Davinci</li>
+          <li><b>Role:</b> Modeling, Lighting, Rigging, Animation, Rendering</li>
+          <li><b>Year:</b> 2026</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="work-modal" id="gpo-modal" aria-labelledby="gpo-title">
+    <button class="modal-close" type="button" aria-label="Close">✕</button>
+
+    <div class="modal-grid">
+      <video class="modal-video" controls playsinline preload="metadata">
+        <source src="5EeG-flqk0noKKBn0Da9KQ.mp4" type="video/mp4">
+      </video>
+
+      <div class="modal-info">
+        <span class="modal-tag">GPO / 02</span>
+        <h3 id="gpo-title">Macro Program for Grand Piece Online</h3>
+        <p>I made this program for me to automate buying items in Grand Piece Online.
+          It's purpose to make the process of trading items in the game easier and faster.
+          with minimal effort. And i can sell it for real money.
+        </p>
+        <ul class="modal-meta">
+          <li><b>Tools:</b> Autohotkey, Python</li>
+          <li><b>Role:</b>Programmer, Script Writer, Tester</li>
+          <li><b>Year:</b> 2026</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal-gallery">
+      <h4>Code preview</h4>
+      <div class="gallery-grid">
+        <a href="image2.png"><img src="image2.png" alt="Macro script: setup, hotkeys and settings" loading="lazy"></a>
+        <a href="image3.png"><img src="image3.png" alt="Macro script: image search tests and RAM trimming"
+            loading="lazy"></a>
+        <a href="image4.png"><img src="image4.png" alt="Macro script: maintenance cycle and trigger check"
+            loading="lazy"></a>
+        <a href="image5.png"><img src="image5.png" alt="Macro script: message check and BuyItem start"
+            loading="lazy"></a>
+        <a href="image1.png"><img src="image1.png" alt="Macro script: shop buying routine" loading="lazy"></a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="work-modal" id="yt-modal" aria-labelledby="yt-title">
+    <button class="modal-close" type="button" aria-label="Close">✕</button>
+
+    <div class="modal-grid">
+      <video class="modal-video fill" controls playsinline preload="metadata">
+        <source src="youtube.mp4" type="video/mp4">
+      </video>
+
+      <div class="modal-info">
+        <span class="modal-tag">YOUTUBE / 03</span>
+        <h3 id="yt-title">My YouTube Channel</h3>
+        <p>I did this as a side project. Was curious about content creation, and honestly it's pretty stupid on how
+          YouTube works.
+          But nonetheless, I learned about a lot about algorithm and attract new eyes.
+        </p>
+        <ul class="modal-meta">
+          <li><b>Tools:</b>Davinci Resolve 20/21</li>
+          <li><b>Role:</b>Content Creator</li>
+          <li><b>Year:</b> 2026</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal-gallery">
+      <h4>Channel analytics</h4>
+      <div class="gallery-grid pair">
+        <a href="currentsubs.png"><img src="currentsubs.png" alt="Current subscribers: 407, up 76 in the last 28 days"
+            loading="lazy"></a>
+        <a href="youtubeimage.png"><img src="youtubeimage.png"
+            alt="YouTube Studio analytics: 276.4K lifetime Shorts views and subscriber growth" loading="lazy"></a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+    <button class="lb-btn lb-close" type="button" aria-label="Close">✕</button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous image">‹</button>
+    <img id="lb-img" src="" alt="">
+    <button class="lb-btn lb-next" type="button" aria-label="Next image">›</button>
+    <p id="lb-cap"></p>
+  </dialog>
+  <dialog class="work-modal" id="backrooms-modal" aria-labelledby="backrooms-title">
+    <button class="modal-close" type="button" aria-label="Close">✕</button>
+
+    <div class="modal-grid">
+      <video class="modal-video" controls playsinline preload="metadata">
+        <source src="backrooms_card.mp4" type="video/mp4">
+      </video>
+
+      <div class="modal-info">
+        <span class="modal-tag">BACKROOMS / 04</span>
+        <h3 id="backrooms-title">Backrooms Movie Video Project</h3>
+        <p>My first ever blender project.Took a lot of inspiration from the tutorial
+          by Ducky 3D. I learned a lot about blender, and how to make a good looking scene.
+          I also learned about camera movement, lighting, and rendering. Spent about 2 months on this project, and i'm
+          proud of the result.
+        </p>
+        <ul class="modal-meta">
+          <li><b>Tools:</b>Blender,Davinci Resolve 20/21</li>
+          <li><b>Role:</b>Modeler,Animator,Renderer,Editor</li>
+          <li><b>Year:</b> 2026</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+  <script>
+    const ASCEND_FONTS = ["Jacatra", "Graffiti Youth", "Aerosoldier"];
+    const SWITCH_MS = 700;
+    let ascendIndex = 0;
+
+    const SIZE = 200;                       // measuring size (px)
+    const cv = document.createElement('canvas');
+    cv.width = 2400; cv.height = 800;
+    const ctx = cv.getContext('2d', { willReadFrequently: true });
+
+    function fitAscend(font) {
+      const t = document.getElementById('ascend-text');
+      if (!t) return;
+
+      t.setAttribute('font-size', SIZE);
+      t.setAttribute('font-family', `"${font}", Impact, sans-serif`);
+
+      // draw the word and find the real edges of the painted letters
+      const OX = 200, OY = 500;
+      ctx.clearRect(0, 0, cv.width, cv.height);
+      ctx.font = `${SIZE}px "${font}", Impact, sans-serif`;
+      ctx.textBaseline = 'alphabetic';
+      ctx.fillStyle = '#000';
+      ctx.fillText('ASCEND', OX, OY);
+
+      const { data, width, height } = ctx.getImageData(0, 0, cv.width, cv.height);
+      let minX = width, minY = height, maxX = -1, maxY = -1;
+      for (let y = 0; y < height; y++) {
+        for (let x = 0; x < width; x++) {
+          if (data[(y * width + x) * 4 + 3] > 10) {
+            if (x < minX) minX = x;
+            if (x > maxX) maxX = x;
+            if (y < minY) minY = y;
+            if (y > maxY) maxY = y;
+          }
+        }
+      }
+      if (maxX < 0) return;                 // nothing drawn, keep the old viewBox
+
+      // text is drawn at x=0,y=0 in the SVG, so shift the box by the canvas origin
+      t.ownerSVGElement.setAttribute('viewBox',
+        `${minX - OX} ${minY - OY} ${maxX - minX + 1} ${maxY - minY + 1}`);
+    }
+
+    Promise.all(ASCEND_FONTS.map(f => document.fonts.load(`${SIZE}px "${f}"`, 'ASCEND')))
+      .catch(() => { })
+      .then(() => {
+        fitAscend(ASCEND_FONTS[0]);
+        setInterval(() => {
+          ascendIndex = (ascendIndex + 1) % ASCEND_FONTS.length;
+          fitAscend(ASCEND_FONTS[ascendIndex]);
+        }, SWITCH_MS);
+      });
+  </script>
+  <script>
+    // Open a project pop-up when its card is clicked (or Enter/Space is pressed)
+    document.querySelectorAll('.work-card[data-modal]').forEach(card => {
+      const modal = document.getElementById(card.dataset.modal);
+      if (!modal) return;
+      const video = modal.querySelector('video');
+
+      const open = () => {
+        modal.showModal();
+        if (video) video.play().catch(() => { });
+      };
+
+      card.addEventListener('click', open);
+      card.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+      });
+
+      // close button
+      modal.querySelector('.modal-close').addEventListener('click', () => modal.close());
+
+      // click on the dark backdrop closes it
+      modal.addEventListener('click', e => {
+        if (e.target === modal) modal.close();
+      });
+
+      // stop the video whenever the pop-up closes (button, backdrop or Esc)
+      modal.addEventListener('close', () => {
+        if (video) { video.pause(); video.currentTime = 0; }
+      });
+    });
+  </script>
+  <script>
+    (function () {
+      const box = document.getElementById('bubbles');
+      if (!box) return;
+
+      const COUNT = 26;
+      const rand = (min, max) => Math.random() * (max - min) + min;
+
+      for (let i = 0; i < COUNT; i++) {
+        const b = document.createElement('span');
+        b.className = 'bubble' + (Math.random() < 0.2 ? ' red' : '');
+        b.style.setProperty('--x', rand(0, 98).toFixed(1) + '%');
+        b.style.setProperty('--s', rand(8, 38).toFixed(0) + 'px');
+        b.style.setProperty('--d', rand(9, 20).toFixed(1) + 's');
+        b.style.setProperty('--delay', (-rand(0, 20)).toFixed(1) + 's');
+        b.style.setProperty('--drift', rand(-40, 40).toFixed(0) + 'px');
+        b.style.setProperty('--o', rand(0.35, 0.8).toFixed(2));
+        box.appendChild(b);
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      const box = document.getElementById('lightbox');
+      const img = document.getElementById('lb-img');
+      const cap = document.getElementById('lb-cap');
+      if (!box) return;
+
+      let links = [];
+      let index = 0;
+
+      function show(i) {
+        index = (i + links.length) % links.length;
+        const a = links[index];
+        img.src = a.getAttribute('href');
+        img.alt = a.querySelector('img').alt;
+        cap.textContent = (index + 1) + ' / ' + links.length + '  -  ' + img.alt;
+      }
+
+      document.addEventListener('click', e => {
+        const a = e.target.closest('.gallery-grid a');
+        if (!a) return;
+        e.preventDefault();
+        links = [...a.closest('.gallery-grid').querySelectorAll('a')];
+        show(links.indexOf(a));
+        if (!box.open) box.showModal();
+      });
+
+      box.querySelector('.lb-close').addEventListener('click', () => box.close());
+      box.querySelector('.lb-prev').addEventListener('click', () => show(index - 1));
+      box.querySelector('.lb-next').addEventListener('click', () => show(index + 1));
+      box.addEventListener('click', e => { if (e.target === box) box.close(); });
+      box.addEventListener('keydown', e => {
+        if (e.key === 'ArrowLeft') show(index - 1);
+        if (e.key === 'ArrowRight') show(index + 1);
+      });
+    })();
+  </script>
+  <script>
+(function () {
+  const sec  = document.getElementById('contact');
+  const wall = document.getElementById('contact-wall');
+  const top  = document.getElementById('to-top');
+  if (!sec || !wall) return;
+
+  const videos = [
+    { src: 'FNAF.mp4', type: 'video' },
+    { src: '5EeG-flqk0noKKBn0Da9KQ.mp4', type: 'video' },
+    { src: 'youtube.mp4', type: 'video' },
+    { src: 'backrooms_card.mp4', type: 'video' }
+  ];
+  const images = ['image1.png', 'image2.png', 'image3.png', 'image4.png', 'image5.png', 'currentsubs.png',
+    'youtubeimage.png', 'profile.jpeg'];
+  for (let i = 0; i < 24; i++) {
+    const t = document.createElement('div');
+    t.className = 'tile';
+    const item = i < videos.length ? videos[i] : { src: images[(i - videos.length) % images.length], type: 'image' };
+    const visual = document.createElement(item.type === 'video' ? 'video' : 'img');
+    if (item.type === 'video') {
+      visual.muted = true;
+      visual.loop = true;
+      visual.autoplay = true;
+      visual.playsInline = true;
+      visual.preload = 'metadata';
+    } else {
+      visual.alt = '';
+      visual.decoding = 'async';
+    }
+    visual.src = item.src;
+    t.appendChild(visual);
+    wall.appendChild(t);
+  }
+
+  // drag to move the wall around
+  let sx = 0, sy = 0, ox = 0, oy = 0, x = 0, y = 0, down = false;
+  const clamp = (v, m) => Math.max(-m, Math.min(m, v));
+
+  sec.addEventListener('pointerdown', e => {
+    if (e.target.closest('a, button')) return;
+    down = true; sx = e.clientX; sy = e.clientY; ox = x; oy = y;
+    sec.classList.add('dragging');
+  });
+  window.addEventListener('pointermove', e => {
+    if (!down) return;
+    x = clamp(ox + e.clientX - sx, sec.offsetWidth * 0.2);
+    y = clamp(oy + e.clientY - sy, 350);
+    wall.style.setProperty('--dx', x + 'px');
+    wall.style.setProperty('--dy', y + 'px');
+  });
+  window.addEventListener('pointerup', () => {
+    down = false; sec.classList.remove('dragging');
+  });
+
+  if (top) top.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
+</script>
+<script>
+(function () {
+  const mail = document.getElementById('contact-mail');
+  if (!mail) return;
+
+  let timer;
+
+  function flash() {
+    mail.classList.add('copied');
+    clearTimeout(timer);
+    timer = setTimeout(() => mail.classList.remove('copied'), 1500);
+  }
+
+  function fallbackCopy(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    ta.remove();
+  }
+
+  mail.addEventListener('click', e => {
+    e.preventDefault();                       // don't open the mail app
+    const text = mail.dataset.email;
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).catch(() => fallbackCopy(text));
+    } else {
+      fallbackCopy(text);
+    }
+    flash();
+  });
+})();
+</script>
+</body>
+
+</html>
